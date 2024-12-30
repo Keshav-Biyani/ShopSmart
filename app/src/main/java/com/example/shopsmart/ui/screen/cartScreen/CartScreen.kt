@@ -83,6 +83,7 @@ fun CartScreenUI(
             TopAppBar(
                 title = { Text("Cart") },
                 navigationIcon = {
+
                     IconButton(onClick = { onBackClick() }) {
                         Icon(
                             imageVector = Icons.Default.ArrowBack,
