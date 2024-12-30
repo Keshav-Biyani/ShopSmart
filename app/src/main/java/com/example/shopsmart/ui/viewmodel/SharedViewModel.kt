@@ -1,4 +1,4 @@
-package com.example.shopsmart.ui
+package com.example.shopsmart.ui.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
@@ -32,8 +32,12 @@ class SharedViewModel @Inject constructor(private  val repository: Repository) :
             ),
             Product(2, "Ayuvya Boobeautiful Oil","Daily Health","Ashwagandha, Amla, Narkachoor + 6 other herbs" , 899.0,  599.0 , "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Fbbf_carousel_1slide_6nov2024.webp&w=640&q=75", 4.2f, 1234),
             Product(3, "Ayuvya Boomax | 60 capsules","Daily Health","Ashwagandha, Amla, Narkachoor + 6 other herbs", 965.0, 765.0, "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Fayuvya_bmax_new_carousel_13july_1.webp&w=640&q=75", 4.8f, 2145),
-            Product(4, "Ayuvya Boobeautiful Oil","Daily Health","Ashwagandha, Amla, Narkachoor + 6 other herbs", 899.0,  599.0 , "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Fbbf_carousel_1slide_6nov2024.webp&w=640&q=75", 4.2f, 1234),
-        Product(5, "Ayuvya Boomax | 60 capsules","Daily Health","Ashwagandha, Amla, Narkachoor + 6 other herbs", 965.0, 765.0, "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Fayuvya_bmax_new_carousel_13july_1.webp&w=640&q=75", 4.8f, 2145)
+            Product(4, "Ayuvya FizzHim | 15 Tablets","Daily Health","Shilajit, Ashwagandha and 6 other herbs", 899.0,  599.0 , "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Ffizzhim_new_carousel_10july.webp%3Fq%3D70&w=640&q=75", 4.2f, 1234),
+        Product(5, "Ayuvya Retight Body Oil","Daily Health","Ashwagandha, Amla, Narkachoor + 6 other herbs", 965.0, 765.0, "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Fretight_body_oil_for_strech_marks_new_carousel_3aug_1.webp%3Fq%3D70&w=640&q=75", 4.8f, 2145),
+        Product(6, "Ayuvya Boobeautiful Oil","Daily Health","Ashwagandha, Amla, Narkachoor + 6 other herbs" , 899.0,  599.0 , "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Fbbf_carousel_1slide_6nov2024.webp&w=640&q=75", 4.2f, 1234),
+        Product(7, "Ayuvya Boomax | 60 capsules","Daily Health","Ashwagandha, Amla, Narkachoor + 6 other herbs", 965.0, 765.0, "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Fayuvya_bmax_new_carousel_13july_1.webp&w=640&q=75", 4.8f, 2145),
+        Product(8, "Ayuvya Boobeautiful Oil","Daily Health","Ashwagandha, Amla, Narkachoor + 6 other herbs", 899.0,  599.0 , "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Fbbf_carousel_1slide_6nov2024.webp&w=640&q=75", 4.2f, 1234),
+        Product(9, "Ayuvya Hair Hax","Daily Health","Amla, Methi seeds, +5 other herbs", 965.0, 765.0, "https://ayuvya.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fayuvya_images%2Fproduct_image%2Fhair_haxx_product_image_slide1_13may_2024.webp%3Fq%3D70&w=640&q=75", 4.8f, 2145)
 
     )
     )

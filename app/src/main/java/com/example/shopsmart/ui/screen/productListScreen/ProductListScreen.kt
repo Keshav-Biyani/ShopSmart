@@ -1,9 +1,7 @@
 package com.example.shopsmart.ui.screen.productListScreen
 
 
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.items
-import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -13,16 +11,15 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.shopsmart.data.local.entites.Product
-import com.example.shopsmart.ui.SharedViewModel
+import com.example.shopsmart.ui.viewmodel.SharedViewModel
 import com.example.shopsmart.ui.screen.productListScreen.component.CartIcon
 import com.example.shopsmart.ui.screen.productListScreen.component.ProductCard
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun ProductListScreenStateFull(viewModel: SharedViewModel,onProductClick :(Int)->Unit, onNavigation: () -> Unit) {
+fun ProductListScreenStateFull(viewModel: SharedViewModel, onProductClick :(Int)->Unit, onNavigation: () -> Unit) {
     val productList by viewModel.products.collectAsState()
     val cartItemCount by viewModel.cartItemCount.collectAsState()
 

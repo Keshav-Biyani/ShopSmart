@@ -18,6 +18,7 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Remove
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -87,12 +88,12 @@ fun CartItem(
                 IconButton(
                     onClick = {  if (cartEntity.quantity > 0) onQuantityChange(cartEntity.quantity - 1) }, // Ensure onDecrease is invoked properly
                     modifier = Modifier
-                        .size(30.dp) // Consistent button size
+                        .size(20.dp) // Consistent button size
                         .padding(4.dp) // Adjust padding inside the button
                      //   .background(Color.Gray.copy(alpha = 0.2f), shape = RoundedCornerShape(50)) // Background color
                 ) {
                     Icon(
-                        imageVector = Icons.Default.Clear, // Changed to 'Remove' for better semantics
+                        imageVector = Icons.Default.Remove, // Changed to 'Remove' for better semantics
                         contentDescription = "Decrease Quantity",
                       //  tint = Color.White, // Contrast tint for better visibility
                         modifier = Modifier.size(24.dp) // Adjust icon size
@@ -111,7 +112,7 @@ fun CartItem(
                 IconButton(
                     onClick = { onQuantityChange(cartEntity.quantity + 1) }, // Ensure onIncrease is invoked properly
                     modifier = Modifier
-                        .size(30.dp) // Consistent button size
+                        .size(20.dp) // Consistent button size
                         .padding(4.dp) // Adjust padding inside the button
                       //  .background(Color.Gray.copy(alpha = 0.2f), shape = RoundedCornerShape(50)) // Background color
                 ) {

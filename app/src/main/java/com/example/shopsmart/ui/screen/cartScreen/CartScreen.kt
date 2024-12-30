@@ -27,6 +27,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.AbsoluteAlignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
@@ -34,19 +35,17 @@ import androidx.compose.ui.unit.dp
 import com.example.shopsmart.R
 import com.example.shopsmart.data.local.entites.CartEntity
 import com.example.shopsmart.ui.screen.component.EmptyList
-import com.example.shopsmart.ui.SharedViewModel
+import com.example.shopsmart.ui.viewmodel.SharedViewModel
 import com.example.shopsmart.ui.screen.cartScreen.component.CartItem
-
-
-
+import com.example.shopsmart.utlis.sendMessageToWhatsApp
 
 
 @Composable
-fun CartScreenStateful(viewModel: SharedViewModel, onStartShopping: () -> Unit,onProductClick:(Int)->Unit, onBackClick: () -> Unit) {
+fun CartScreenStateful(viewModel: SharedViewModel, onStartShopping: () -> Unit, onProductClick:(Int)->Unit, onBackClick: () -> Unit) {
     val cartList by viewModel.cartList.collectAsState()
     val subtotal by viewModel.totalDiscountedPriceWithQuantity.collectAsState()
     val discount by viewModel.totalOriginalPriceWithQuantity.collectAsState()
-
+val context = LocalContext.current
     CartScreenUI(
         cartList = cartList,
         onBackClick = onBackClick,
@@ -61,7 +60,10 @@ fun CartScreenStateful(viewModel: SharedViewModel, onStartShopping: () -> Unit,o
             onProductClick(productId)
 
         }
-        ,{}
+        ,{
+            sendMessageToWhatsApp("+91 8078621257","New order From App \n Keshav",context)
+
+        }
     )
 }
 

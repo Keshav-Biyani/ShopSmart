@@ -9,11 +9,12 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.shopsmart.ui.SharedViewModel
+import com.example.shopsmart.ui.viewmodel.SharedViewModel
 import com.example.shopsmart.ui.screen.cartScreen.CartScreenStateful
+import com.example.shopsmart.ui.screen.productDetailScreen.ProductDetailScreen
 
 import com.example.shopsmart.ui.screen.productListScreen.ProductListScreenStateFull
-import com.example.shopsmart.ui.screen.productListScreen.component.ProductDetailScreen
+
 
 
 @Composable
